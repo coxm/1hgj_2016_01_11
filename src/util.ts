@@ -13,9 +13,10 @@ const DEG_TO_RAD: number = Math.PI / 180;
  */
 export function rangeIncl(minIncl: number, maxIncl: number): number[] {
 	var a: number[] = new Array(maxIncl - minIncl + 1),
-		i: number = minIncl;
-	for (; i <= maxIncl; ++i) {
-		a[i] = i;
+		i: number = minIncl,
+		j: number = 0;
+	for (; i <= maxIncl; ++i, ++j) {
+		a[j] = i;
 	}
 	return a;
 }
