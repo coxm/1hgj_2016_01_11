@@ -1,0 +1,23 @@
+{
+  "name": "1hgh_bitslap",
+  "description": "Bitslap 1hgj",
+  "main": "app/index.html",
+  "authors": [
+    "coxm"
+  ],
+  "license": "GPLv3+",
+  "keywords": [
+    "1hgj",
+    "phaser",
+    "typescript"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "",
+  "private": true,
+  "devDependencies": {
+    "phaser": "~2.4.4",
+    "jquery": "2.1.4"
+  }
+}

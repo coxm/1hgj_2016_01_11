@@ -1,0 +1,29 @@
+{
+  "name": "Bitslap 1hgj",
+  "version": "0.0.0",
+  "description": "Bitslap 1hgj",
+  "main": "app/index.html",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-ts": "^5.0.0-beta.2"
+  },
+  "devDependencies": {
+    "grunt-dom-munger": "3.4.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:coxm/1hgh-2016-01-11"
+  },
+  "keywords": [
+    "1hgj",
+    "phaser",
+    "typescript"
+  ],
+  "author": "coxm",
+  "license": "GPLv3+",
+  "bugs": {
+  }
+}
