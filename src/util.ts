@@ -27,6 +27,12 @@ export function randInt(min: number, max: number): number {
 }
 
 
+/** Get a random boolean. */
+export function randBool(): boolean {
+	return Math.random() >= 0.5;
+}
+
+
 /** Calculate the L2-distance between two points. */
 export function l2Distance(
 	a: {x: number; y: number;},

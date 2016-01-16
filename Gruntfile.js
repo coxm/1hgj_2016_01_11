@@ -19,6 +19,7 @@ module.exports = function(grunt) {
 					'refs/common.d.ts',
 					'src/util.ts',
 					'src/settings.ts',
+					'src/CustomText.ts',
 					'src/State.ts',
 					'src/main.ts'
 				],

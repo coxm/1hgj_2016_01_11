@@ -62,10 +62,19 @@ export class State extends Phaser.State {
 	}
 
 	spawnBits(): void {
-		const bit = jam.randInt(0, MAX_BIT),
+		const isGood: boolean = jam.randBool(),
+			bit = jam.randInt(0, MAX_BIT),
 			x: number = jam.randInt(0, settings.viewport.width),
-			y: number = jam.randInt(0, settings.viewport.height);
+			y: number = jam.randInt(0, settings.viewport.height),
+			group: Phaser.Group = isGood ? this.goodBits : this.badBits;
 
+		const text = new CustomText(
+			this.game,
+			x, y,
+			'0x' + bit.toString(2)
+		);
+		this.game.add.existing(text);
+		group.add(text);
 	}
 
 	protected group(name: string): Phaser.Group {
